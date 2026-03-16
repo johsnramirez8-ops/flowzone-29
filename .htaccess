@@ -1,0 +1,45 @@
+# FlowZone - Apache Configuration
+
+# Habilitar rewrite engine
+RewriteEngine On
+
+# Prevenir acceso directo a archivos de configuración
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Proteger archivos sensibles
+<FilesMatch "(conexion\.php|auth\.php)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Configuración de errores personalizados
+ErrorDocument 404 /FLOWZONE/index.php
+ErrorDocument 403 /FLOWZONE/index.php
+
+# Seguridad adicional
+Options -Indexes
+ServerSignature Off
+
+# Configuración de PHP
+php_flag display_errors Off
+php_flag log_errors On
+php_value error_log /tmp/php_errors.log
+
+# Compresión GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
+
+# Cache de archivos estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
