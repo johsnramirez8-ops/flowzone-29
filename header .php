@@ -38,7 +38,7 @@ if ($usuario_nombre && $usuario_id_nav) {
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="/FLOWZONE/index.php">🌄 FlowZone</a>
+                <a href="/FLOWZONE/index.php">FlowZone</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="/FLOWZONE/index.php">Inicio</a></li>
@@ -49,11 +49,11 @@ if ($usuario_nombre && $usuario_id_nav) {
                 <li><a href="/FLOWZONE/contacto.php">Contacto</a></li>
 
                 <?php if ($usuario_nombre): ?>
-                    <li><a href="/FLOWZONE/favoritos.php">❤️ Favoritos</a></li>
+                    <li><a href="/FLOWZONE/favoritos.php">Favoritos</a></li>
 
                     <li>
                         <a href="/FLOWZONE/mis_reservas.php" style="position:relative;display:inline-flex;align-items:center;gap:4px;">
-                            🛒 Mis Reservas
+                            Mis Reservas
                             <?php if ($reservas_count > 0): ?>
                                 <span style="
                                     display:inline-flex;align-items:center;justify-content:center;
@@ -66,11 +66,11 @@ if ($usuario_nombre && $usuario_id_nav) {
                     </li>
 
                     <?php if ($usuario_rol === 'admin'): ?>
-                        <li><a href="/FLOWZONE/admin/dashboard.php">📊 Admin</a></li>
+                        <li><a href="/FLOWZONE/admin/dashboard.php"> Admin</a></li>
                     <?php endif; ?>
 
                     <?php if ($usuario_rol === 'empresa'): ?>
-                        <li><a href="/FLOWZONE/empresa/dashboard.php">🏢 Mi Empresa</a></li>
+                        <li><a href="/FLOWZONE/empresa/dashboard.php">Mi Empresa</a></li>
                     <?php endif; ?>
 
                     <li class="user-menu">

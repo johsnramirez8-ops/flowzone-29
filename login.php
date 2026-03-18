@@ -2,13 +2,23 @@
 session_start();
 require_once 'includes/conexion.php';
 
-if (!empty($_SESSION['usuario_id'])) {
+// 👇 ESTA PARTE ES LA QUE CONTROLA SI YA ESTÁ LOGUEADO
+if (isset($_SESSION['usuario_id']) && $_SESSION['usuario_id'] != null) {
     $rol = $_SESSION['usuario_rol'] ?? '';
-    if ($rol === 'admin')   { header('Location: /FLOWZONE/admin/dashboard.php'); exit; }
-    if ($rol === 'empresa') { header('Location: /FLOWZONE/empresa/dashboard.php'); exit; }
-    header('Location: /FLOWZONE/index.php'); exit;
-}
 
+    if ($rol === 'admin') {
+        header('Location: admin/dashboard.php');
+        exit;
+    }
+
+    if ($rol === 'empresa') {
+        header('Location: empresa/dashboard.php');
+        exit;
+    }
+
+    header('Location: index.php');
+    exit;
+}
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

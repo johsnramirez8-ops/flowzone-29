@@ -29,7 +29,7 @@ if ($usuario_nombre && isset($pdo)) {
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="/FLOWZONE/index.php">🌄 FlowZone</a>
+                <a href="/FLOWZONE/index.php">FlowZone</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="/FLOWZONE/index.php">Inicio</a></li>
@@ -40,7 +40,7 @@ if ($usuario_nombre && isset($pdo)) {
                 <li><a href="/FLOWZONE/contacto.php">Contacto</a></li>
 
                 <?php if ($usuario_nombre): ?>
-                    <li><a href="/FLOWZONE/favoritos.php">❤️ Favoritos</a></li>
+                    <li><a href="/FLOWZONE/favoritos.php">Favoritos</a></li>
 
                     <!-- Carrito de reservas -->
                     <li>
@@ -53,11 +53,11 @@ if ($usuario_nombre && isset($pdo)) {
                     </li>
 
                     <?php if ($usuario_rol === 'admin'): ?>
-                        <li><a href="/FLOWZONE/admin/dashboard.php">📊 Admin</a></li>
+                        <li><a href="/FLOWZONE/admin/dashboard.php"> Admin</a></li>
                     <?php endif; ?>
 
                     <?php if ($usuario_rol === 'empresa'): ?>
-                        <li><a href="/FLOWZONE/empresa/dashboard.php">🏢 Mi Empresa</a></li>
+                        <li><a href="/FLOWZONE/empresa/dashboard.php"> Mi Empresa</a></li>
                     <?php endif; ?>
 
                     <li class="user-menu">
