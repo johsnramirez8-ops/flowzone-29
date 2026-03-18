@@ -447,23 +447,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Panel izquierdo -->
     <div class="panel-izq">
         <div class="marca">
-            <span class="marca-icono">🌄</span>
+            <span class="marca-icono"></span>
             <h1>Flow<span>Zone</span></h1>
             <p>Turismo · Ortega, Tolima</p>
         </div>
         <div class="pilares">
             <div class="pilar">
-                <div class="icono">🏔️</div>
+                <div class="icono"></div>
                 <div class="titulo">Naturaleza</div>
                 <div class="desc">Cascadas y miradores</div>
             </div>
             <div class="pilar">
-                <div class="icono">🍽️</div>
+                <div class="icono"></div>
                 <div class="titulo">Gastronomía</div>
                 <div class="desc">Sabores del Tolima</div>
             </div>
             <div class="pilar">
-                <div class="icono">🏨</div>
+                <div class="icono"></div>
                 <div class="titulo">Hospedaje</div>
                 <div class="desc">Hoteles y posadas</div>
             </div>
@@ -481,19 +481,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Tabs de rol informativo -->
         <div class="rol-tabs">
             <button type="button" class="rol-tab activo" onclick="selRol(this,'usuario')">
-                👤 Visitante
+                 Visitante
             </button>
             <button type="button" class="rol-tab" onclick="selRol(this,'empresa')">
-                🏢 Empresa
+                 Empresa
             </button>
             <button type="button" class="rol-tab" onclick="selRol(this,'admin')">
-                ⚙️ Admin
+                Admin
             </button>
         </div>
 
         <?php if ($error): ?>
             <div class="alerta-error">
-                <span>⚠️</span>
+                <span></span>
                 <?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8') ?>
             </div>
         <?php endif; ?>
@@ -512,7 +512,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="campo">
                 <label>Contraseña</label>
                 <div class="campo-input">
-                    <span class="icono-campo">🔒</span>
+                    <span class="icono-campo"></span>
                     <input type="password" name="password" required autocomplete="current-password"
                            placeholder="••••••••">
                 </div>

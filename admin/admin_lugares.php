@@ -63,17 +63,17 @@ $lugares = $stmt->fetchAll();
     <div class="admin-layout">
         <aside class="admin-sidebar">
             <div class="admin-brand">
-                <h2>🌄 FlowZone Admin</h2>
+                <h2> FlowZone Admin</h2>
             </div>
             <nav class="admin-nav">
-                <a href="/FLOWZONE/admin/dashboard.php">📊 Dashboard</a>
+                <a href="/FLOWZONE/admin/dashboard.php"> Dashboard</a>
                 <a href="/FLOWZONE/admin/admin_lugares.php" class="active">📍 Lugares</a>
-                <a href="/FLOWZONE/admin/admin_hoteles.php">🏨 Hoteles</a>
-                <a href="/FLOWZONE/admin/admin_eventos.php">📅 Eventos</a>
-                <a href="/FLOWZONE/admin/admin_empresas.php">🏢 Empresas</a>
-                <a href="/FLOWZONE/admin/admin_reservas.php">📋 Reservas</a>
-                <a href="/FLOWZONE/index.php">🏠 Volver al Sitio</a>
-                <a href="/FLOWZONE/logout.php">🚪 Cerrar Sesión</a>
+                <a href="/FLOWZONE/admin/admin_hoteles.php"> Hoteles</a>
+                <a href="/FLOWZONE/admin/admin_eventos.php"> Eventos</a>
+                <a href="/FLOWZONE/admin/admin_empresas.php">Empresas</a>
+                <a href="/FLOWZONE/admin/admin_reservas.php"> Reservas</a>
+                <a href="/FLOWZONE/index.php"> Volver al Sitio</a>
+                <a href="/FLOWZONE/logout.php"> Cerrar Sesión</a>
             </nav>
         </aside>
         

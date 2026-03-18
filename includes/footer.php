@@ -16,8 +16,8 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contacto</h4>
-                    <p>📧 info@flowzone.com</p>
-                    <p>📱 +57 320 123 4567</p>
+                    <p> info@flowzone.com</p>
+                    <p> +57 320 123 4567</p>
                 </div>
             </div>
             <div class="footer-bottom">

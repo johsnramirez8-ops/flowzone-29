@@ -268,14 +268,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="campo">
                     <label>Contraseña *</label>
                     <div class="campo-input">
-                        <span class="ic">🔒</span>
+                        <span class="ic"></span>
                         <input type="password" name="password" required minlength="6" placeholder="Mín. 6 chars">
                     </div>
                 </div>
                 <div class="campo">
                     <label>Confirmar *</label>
                     <div class="campo-input">
-                        <span class="ic">🔒</span>
+                        <span class="ic"></span>
                         <input type="password" name="password_confirm" required minlength="6" placeholder="Repetir">
                     </div>
                 </div>
@@ -283,11 +283,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <!-- Sección empresa -->
             <div class="seccion-empresa <?= (($_POST['rol'] ?? '') === 'empresa' ? 'visible' : '') ?>" id="sec-empresa">
-                <div class="seccion-titulo">📋 Datos de la empresa</div>
+                <div class="seccion-titulo"> Datos de la empresa</div>
                 <div class="campo">
                     <label>Nombre de la empresa *</label>
                     <div class="campo-input">
-                        <span class="ic">🏢</span>
+                        <span class="ic"></span>
                         <input type="text" name="empresa_nombre" maxlength="200"
                                placeholder="Nombre legal de tu empresa"
                                value="<?= htmlspecialchars($_POST['empresa_nombre'] ?? '', ENT_QUOTES, 'UTF-8') ?>">
@@ -296,7 +296,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="campo">
                     <label>Dirección</label>
                     <div class="campo-input">
-                        <span class="ic">📍</span>
+                        <span class="ic"></span>
                         <input type="text" name="empresa_direccion" maxlength="400"
                                placeholder="Dirección de la empresa"
                                value="<?= htmlspecialchars($_POST['empresa_direccion'] ?? '', ENT_QUOTES, 'UTF-8') ?>">

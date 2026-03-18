@@ -39,21 +39,21 @@ $ultimas_notifs = array_slice($ultimas_notifs, 0, 5);
 <body>
 <div class="admin-layout">
     <aside class="admin-sidebar">
-        <div class="admin-brand"><h2>🌄 FlowZone Admin</h2></div>
+        <div class="admin-brand"><h2> FlowZone Admin</h2></div>
         <nav class="admin-nav">
-            <a href="/FLOWZONE/admin/dashboard.php" class="active">📊 Dashboard</a>
+            <a href="/FLOWZONE/admin/dashboard.php" class="active"> Dashboard</a>
             <a href="/FLOWZONE/admin/admin_empresas.php">
-                🏢 Empresas
+                 Empresas
                 <?php if ($notif_count > 0): ?>
                     <span class="admin-notif-badge"><?= $notif_count ?></span>
                 <?php endif; ?>
             </a>
-            <a href="/FLOWZONE/admin/admin_lugares.php">📍 Lugares</a>
-            <a href="/FLOWZONE/admin/admin_hoteles.php">🏨 Hoteles</a>
-            <a href="/FLOWZONE/admin/admin_eventos.php">📅 Eventos</a>
-            <a href="/FLOWZONE/admin/admin_reservas.php">📋 Reservas</a>
-            <a href="/FLOWZONE/index.php">🏠 Volver al Sitio</a>
-            <a href="/FLOWZONE/logout.php">🚪 Cerrar Sesión</a>
+            <a href="/FLOWZONE/admin/admin_lugares.php"> Lugares</a>
+            <a href="/FLOWZONE/admin/admin_hoteles.php"> Hoteles</a>
+            <a href="/FLOWZONE/admin/admin_eventos.php"> Eventos</a>
+            <a href="/FLOWZONE/admin/admin_reservas.php"> Reservas</a>
+            <a href="/FLOWZONE/index.php"> Volver al Sitio</a>
+            <a href="/FLOWZONE/logout.php"> Cerrar Sesión</a>
         </nav>
     </aside>
 
@@ -72,30 +72,30 @@ $ultimas_notifs = array_slice($ultimas_notifs, 0, 5);
 
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-icon">👥</div>
+                <div class="stat-icon"></div>
                 <div class="stat-info"><h3><?= $total_usuarios ?></h3><p>Usuarios</p></div>
             </div>
             <div class="stat-card">
-                <div class="stat-icon">🏢</div>
+                <div class="stat-icon"></div>
                 <div class="stat-info">
                     <h3><?= $total_empresas ?></h3>
                     <p>Empresas <?php if ($empresas_pend > 0): ?><span style="color:var(--danger);font-size:0.8rem">(<?= $empresas_pend ?> pend.)</span><?php endif; ?></p>
                 </div>
             </div>
             <div class="stat-card">
-                <div class="stat-icon">📍</div>
+                <div class="stat-icon"></div>
                 <div class="stat-info"><h3><?= $total_lugares ?></h3><p>Lugares</p></div>
             </div>
             <div class="stat-card">
-                <div class="stat-icon">🏨</div>
+                <div class="stat-icon"></div>
                 <div class="stat-info"><h3><?= $total_hoteles ?></h3><p>Hoteles</p></div>
             </div>
             <div class="stat-card">
-                <div class="stat-icon">📋</div>
+                <div class="stat-icon"></div>
                 <div class="stat-info"><h3><?= $reservas_pend ?></h3><p>Reservas Pend.</p></div>
             </div>
             <div class="stat-card">
-                <div class="stat-icon">💬</div>
+                <div class="stat-icon"></div>
                 <div class="stat-info"><h3><?= $total_comentarios ?></h3><p>Comentarios</p></div>
             </div>
         </div>

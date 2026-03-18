@@ -40,7 +40,7 @@ if ($usuario_nombre && isset($pdo)) {
                 <li><a href="/FLOWZONE/contacto.php">Contacto</a></li>
 
                 <?php if ($usuario_nombre): ?>
-                    <li><a href="/FLOWZONE/favoritos.php">❤️ Favoritos</a></li>
+                    <li><a href="/FLOWZONE/favoritos.php"> Favoritos</a></li>
 
                     <!-- Carrito de reservas -->
                     <li>

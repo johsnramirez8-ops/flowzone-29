@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['solicitud'])) {
             $pdo->prepare(
                 'INSERT INTO notificaciones_admin (empresa_id, mensaje, leido) VALUES (?, ?, 0)'
             )->execute([(int)$empresa['id'], "Solicitud de «{$empresa['nombre']}»: {$descripcion}"]);
-            $msg = '✅ Solicitud enviada. El administrador la revisará pronto.';
+            $msg = ' Solicitud enviada. El administrador la revisará pronto.';
             $tipo_msg = 'success';
         } catch (PDOException $e) {
             $msg = 'Error al enviar. Intenta de nuevo.';
@@ -66,7 +66,7 @@ if ($empresa) {
 
 <section class="page-header">
     <div class="container">
-        <h1>🏢 Panel de Empresa</h1>
+        <h1> Panel de Empresa</h1>
         <p>Gestiona tu información y comunícate con el administrador</p>
     </div>
 </section>
@@ -84,7 +84,7 @@ if ($empresa) {
 
             <!-- Info empresa -->
             <div style="background:#fff;border-radius:12px;padding:2rem;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
-                <h2 style="color:var(--primary);margin-bottom:1.2rem;font-size:1.3rem;">📋 Información registrada</h2>
+                <h2 style="color:var(--primary);margin-bottom:1.2rem;font-size:1.3rem;"> Información registrada</h2>
                 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
                     <?php
                     $campos = [
