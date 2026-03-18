@@ -22,7 +22,7 @@ if ($usuario_rol === 'admin') {
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="/FLOWZONE/index.php">🌄 FlowZone</a>
+                <a href="/FLOWZONE/index.php"> FlowZone</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="/FLOWZONE/index.php">Inicio</a></li>
@@ -37,7 +37,7 @@ if ($usuario_rol === 'admin') {
                     <?php if ($usuario_rol === 'admin'): ?>
                         <li>
                             <a href="/FLOWZONE/admin/dashboard.php">
-                                📊 Admin
+                                Admin
                                 <?php if ($notif_count > 0): ?>
                                     <span class="notif-badge"><?= $notif_count ?></span>
                                 <?php endif; ?>
@@ -45,7 +45,7 @@ if ($usuario_rol === 'admin') {
                         </li>
                     <?php endif; ?>
                     <?php if ($usuario_rol === 'empresa'): ?>
-                        <li><a href="/FLOWZONE/empresa/dashboard.php">🏢 Mi Empresa</a></li>
+                        <li><a href="/FLOWZONE/empresa/dashboard.php">Mi Empresa</a></li>
                     <?php endif; ?>
                     <li class="user-menu">
                         <span>👤 <?= htmlspecialchars($usuario_nombre, ENT_QUOTES, 'UTF-8') ?></span>

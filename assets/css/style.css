@@ -734,8 +734,8 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--dark);
-    color: var(--white);
+    background: #2d7a3e;
+    
     padding: 3rem 0 1rem;
     margin-top: 4rem;
 }
