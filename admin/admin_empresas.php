@@ -105,7 +105,6 @@ $empresas = $pdo->query("
             <a href="/FLOWZONE/admin/admin_hoteles.php">🏨 Hoteles</a>
             <a href="/FLOWZONE/admin/admin_eventos.php">📅 Eventos</a>
             <a href="/FLOWZONE/admin/admin_reservas.php">📋 Reservas</a>
-            <a href="/FLOWZONE/index.php">🏠 Volver al Sitio</a>
             <a href="/FLOWZONE/logout.php">🚪 Cerrar Sesión</a>
         </nav>
     </aside>

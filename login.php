@@ -457,7 +457,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Panel izquierdo -->
     <div class="panel-izq">
         <div class="marca">
-            <span class="marca-icono">🌄</span>
+            <span class="marca-icono"></span>
             <h1>Flow<span>Zone</span></h1>
             <p>Turismo · Ortega, Tolima</p>
         </div>
